@@ -1,0 +1,23 @@
+.custom-dropdown-btn {
+  width: 400px;
+  position: relative;
+}
+
+.custom-dropdown-btn::after {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  border-top-color: white;
+}
+
+.custom-dropdown-item:hover {
+  background-color: #0d6efd;
+  cursor: pointer;
+  color: white;
+}
+
+.selected-item {
+  background-color: #0d6efd;
+  color: white;
+}
