@@ -20,8 +20,8 @@ const CustomDropdown = ({ items, placeholder = "Select an option" }: CustomDropd
   };
 
   return (
-    <div className="dropdown mt-5" style={{ position: "relative", display: "inline-block" }}>
-      <button className=" custom-dropdown-btn btn btn-primary dropdown-toggle fs-3 rounded-0 rounded-top" type="button" onClick={toggleDropdown}>
+    <div className="dropdown mt-5">
+      <button className=" custom-dropdown-btn btn btn-primary dropdown-toggle fs-3 rounded-0 rounded-top w-100" type="button" onClick={toggleDropdown}>
         {selectedItem || placeholder}
       </button>
       <ul className={`${isOpen ? "show" : ""} w-100 fs-3 dropdown-menu mb-5 rounded-0 rounded-bottom p-0`}>
